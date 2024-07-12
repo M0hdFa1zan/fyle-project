@@ -708,11 +708,14 @@ body {
         width: 20%;
     }
 
-    .contain,.contain-services,
+    .contain,
     .contain-middle,
     .growth-section {
         width: 75%;
     }
+
+    .contain-services{
+        width: 75%;}
 
     .quote {
         margin-left: 40px;
