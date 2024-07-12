@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Website</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class='navbar'>
+            <div class='contain-nav'>
+                <div class='nav-left'>
+                    <div class='logo'><img src='./Images/fyle.png' /></div>
+                    <div class='tabs'>
+                        <div>Product</div>
+                        <div>Solutions</div>
+                        <div>Accounting Firms</div>
+                        <div>Pricing</div>
+                        <div>Resources</div>
+                    </div>
+                </div>
+                <div class='nav-right'>
+                    <div>Sign Up</div>
+                    <div class='signup-btn'><button>Login</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class='hero'>
+            <div class='contain'>
+                <div class='hero-text'>
+                    <div class='hero-heading'>AWARD WINNING</div>
+                    <div class='hero-highlight'>DIGITAL MARKETING AGENCY</div>
+                    <div class='hero-detail'>Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                        Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat
+                        et fermentum</div>
+                    <div class='hero-button'><button onclick="togglePopup()">CONTACT US</button></div>
+                </div>
+                <div class="popup" id="popup1">
+                    <button class="close-btn" onclick="togglePopup()"><i class="fa-solid fa-xmark fa-xl"></i></button>
+                    <form action="https://getform.io/f/adryrkka" method="POST">
+                        <p class="form-heading">Talk to us</p>
+                        <input class="full" type="email" name="email" id="email" placeholder="Work email*" />
+                        <div class="username">
+                            <input class="half" type="text" name="firstName" id="fistName" placeholder="First name*" />
+                            <input class="half" type="text" name="lastName" id="lastName" placeholder="Last name*" />
+                        </div>
+                        <div class="consent">
+                            <input type="checkbox" name="subscribe" value="yes" />
+                            <p>I agree to Fyle's terms and conditions, and provide consent to send me communication.</p>
+                        </div>
+                        <div class="form">
+                            <button class="submit-btn" type="submit">Contact Us</button>
+                        </div>
+                    </form>
+                </div>
+                <div class='hero-img'>
+                    <img src='./Images/hero.png' alt='' />
+                </div>
+            </div>
+        </div>
+        <div class="services-section">
+            <div class="contain-services">
+                <div class='hero-heading'>WHAT WE DO</div>
+                <div class="services-details">
+                    <div class='services-highlight'>SERVICES PROVIDE FOR YOU</div>
+                    <div class="services-text">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque
+                        vitae ante at elit
+                        fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <div class="slider">
+                    <div class="card">
+                        <div class="img"><img src="Images/first.png" alt="img" draggable="false"></div>
+                        <div class="layer">
+                            <img src="Images/icon.png" alt="">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <a class="btn" target="_blank" href="https://www.fylehq.com/">READ MORE <img class="arrow"
+                                    src="Assets/icons/arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="Images/second.png" alt="img" draggable="false"></div>
+                        <div class="layer">
+                            <img src="Images/icon.png" alt="">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <a class="btn" target="_blank" href="https://www.fylehq.com/">READ MORE <img class="arrow"
+                                    src="Assets/icons/arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="Images/first.png" alt="img" draggable="false"></div>
+                        <div class="layer">
+                            <img src="Images/icon.png" alt="">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <a class="btn" target="_blank" href="https://www.fylehq.com/">READ MORE <img class="arrow"
+                                    src="Images/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="Images/first.png" alt="img" draggable="false"></div>
+                        <div class="layer">
+                            <img src="Images/icon.png" alt="">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <a class="btn" target="_blank" href="https://www.fylehq.com/">READ MORE <img class="arrow"
+                                    src="Images/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="Images/first.png" alt="img" draggable="false"></div>
+                        <div class="layer">
+                            <img src="Images/icon.png" alt="">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <a class="btn" target="_blank" href="https://www.fylehq.com/">READ MORE <img class="arrow"
+                                    src="Images/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="Images/first.png" alt="img" draggable="false"></div>
+                        <div class="layer">
+                            <img src="Images/icon.png" alt="">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <a class="btn" target="_blank" href="https://www.fylehq.com/">READ MORE <img class="arrow"
+                                    src="Images/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="Images/first.png" alt="img" draggable="false"></div>
+                        <div class="layer">
+                            <img src="Images/icon.png" alt="">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <a class="btn" target="_blank" href="https://www.fylehq.com/">READ MORE <img class="arrow"
+                                    src="Images/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="Images/first.png" alt="img" draggable="false"></div>
+                        <div class="layer">
+                            <img src="Images/icon.png" alt="">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <a class="btn" target="_blank" href="https://www.fylehq.com/">READ MORE <img class="arrow"
+                                    src="Images/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="Images/first.png" alt="img" draggable="false"></div>
+                        <div class="layer">
+                            <img src="Images/icon.png" alt="">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <a class="btn" target="_blank" href="https://www.fylehq.com/">READ MORE <img class="arrow"
+                                    src="Images/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dot-container">
+                    <div class="dot red-dot"></div>
+                    <div class="dot black-dot"></div>
+                    <div class="dot black-dot"></div>
+                </div>
+            </div>
+        </div>
+        <div class='middle'>
+            <div class='contain-middle'>
+                <div class='middle-choose'>
+                    <div class='choose-heading'>WHY CHOOSE US</div>
+                    <div class='choose-highlight'>WHY WE ARE BEST</div>
+                    <div class='choose-cards'>
+                        <div class='cards'>
+                            <div class='card-img'><img src='./Images/target.png' /></div>
+                            <div class='card-title'> Clarified Vision & Target</div>
+                            <div class='card-detail'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy.</div>
+                        </div>
+                        <div class='cards'>
+                            <div class='card-img'><img src='./Images/speed.png' /></div>
+                            <div class='card-title'> High Performance</div>
+                            <div class='card-detail'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy.</div>
+                        </div>
+                        <div class='cards'>
+                            <div class='card-img'><img src='./Images/guard.png' /></div>
+                            <div class='card-title'> Maintain Security</div>
+                            <div class='card-detail'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy.</div>
+                        </div>
+                        <div class='cards'>
+                            <div class='card-img'><img src='./Images/cycle.png' /></div>
+                            <div class='card-title'> Better Strategy & Quality</div>
+                            <div class='card-detail'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class='middle-project'>
+                    <div class='choose-heading'>OUR PROJECT</div>
+                    <div class='choose-highlight'>WHY WE ARE BEST</div>
+                    <div class='gallery'>
+                        <div class='gallery-img'>
+                            <img id="img1" class="image" src='./Images/japan1.avif' alt='' style="display: none;" />
+                            <img id="img2" class="image active" src='./Images/food.png' alt=''
+                                style="display: block;" />
+                            <img id="img3" class="image" src='./Images/japan2.jpg' alt='' style="display: none;">
+                        </div>
+                        <div class='gallery-text'>
+                            <div class='gallery-cards' id="btn1" onclick="showImage('img1', 'btn1')">
+                                <div class='card-title'>Genderless Kei - Japan's Hot</div>
+                                <div class='card-detail'>Set to launch on the manufacturer’s new A330neo aircraft in
+                                    2017, it’s offering lots of</div>
+                            </div>
+                            <div class='gallery-cards active' id="btn2" onclick="showImage('img2', 'btn2')">
+                                <div class='card-title'>Better Strategy & Quality</div>
+                                <div class='card-detail'>Set to launch on the manufacturer’s new A330neo aircraft in
+                                    2017, it’s offering lots of</div>
+                            </div>
+                            <div class='gallery-cards' id="btn3" onclick="showImage('img3', 'btn3')">
+                                <div class='card-title'>Genderless Kei - Japan's Hot</div>
+                                <div class='card-detail'>Set to launch on the manufacturer’s new A330neo aircraft in
+                                    2017, it’s offering lots of</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class='bottom'>
+            <div class='contain-bottom'>
+                <div class='growth'>
+                    <div class='growth-section'>
+                        <div class='choose-heading'>EXPERTS GROWTH</div>
+                        <div class='choose-highlight'>OUR COMPANY GROWTH</div>
+                        <div class='bottom-cards'>
+                            <div class='b-cards'>
+                                <div class='card-logo'>
+                                    <img src='./Images/heart.png' alt='' />
+                                </div>
+                                <div class='card-count'>199+</div>
+                                <div class='bcard-text'>Satisfied Customers</div>
+                            </div>
+                            <div class='b-cards'>
+                                <div class='card-logo'>
+                                    <img src='./Images/clock.png' alt='' />
+                                </div>
+                                <div class='card-count'>1591+</div>
+                                <div class='bcard-text'>Days Of Operation</div>
+                            </div>
+                            <div class='b-cards'>
+                                <div class='card-logo'>
+                                    <img src='./Images/tick.png' alt='' />
+                                </div>
+                                <div class='card-count'>283+</div>
+                                <div class='bcard-text'>Complete Project</div>
+                            </div>
+                            <div class='b-cards'>
+                                <div class='card-logo'>
+                                    <img src='./Images/trophy.png' alt='' />
+                                </div>
+                                <div class='card-count'>75+</div>
+                                <div class='bcard-text'>Win Awards</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='people'>
+                    <div class='choose-heading'>CLIENT'S FEEDBACK</div>
+                    <div class='choose-highlight'>PEOPLE SAY'S ABOUT US</div>
+                    <div class='quote'>
+                        <div class='quote-text'>Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is
+                            reproduced below for those interested. Sections Bonorum et Malorum original.</div>
+                        <div class='tumpa'>
+                            <p class='jannat'>JANNAT TUMPA</p>- COO, AMERIMAR ENTERPRISES, INC.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='footer'>
+            <img src='./Images/brands.png' />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function togglePopup() {
+            const overlay = document.getElementById('popup1');
+            overlay.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
