@@ -719,6 +719,9 @@ body {
 
     .slider{
          width: 75%;}
+    .dot-container {
+        width: 75%;
+    }
 
     .quote {
         margin-left: 40px;
